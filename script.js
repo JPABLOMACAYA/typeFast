@@ -1,5 +1,4 @@
 
-
 const words = [
     'californication',
     'plataforma5',
