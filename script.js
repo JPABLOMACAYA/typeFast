@@ -93,5 +93,5 @@ function gameOver () {
     var parrafoPuntajeFinal = `<p>TU PUNTAJE FINAL ES DE: ${scoreFinal} PUNTOS</p>`;
     var botonVolveAEmpezar = "<br>" + '<button onclick="location.reload()">Volvé a empezar</button>';
     contenedorGameOver.innerHTML = tituloSinTiempo + parrafoPuntajeFinal + botonVolveAEmpezar;
-    divisionPrincipal.innerHTML = ""
+    divisionPrincipal.innerHTML = "";
 }
