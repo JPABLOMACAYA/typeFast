@@ -83,9 +83,9 @@ function updateScore () {
     scoreMostrado.innerHTML = score;  
 }
 
-var contenedorGameOver = document.querySelector("#end-game-container")
+var contenedorGameOver = document.querySelector("#end-game-container");
 
-var divisionPrincipal = document.querySelector(".main")
+var divisionPrincipal = document.querySelector(".main");
 
 function gameOver () {
     var tituloSinTiempo = "<h2>TE HAS QUEDADO SIN TIEMPO!!!</h2>";
