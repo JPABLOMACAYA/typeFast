@@ -47,7 +47,7 @@ var palabraIngresada = document.querySelector("#text");
 
 tiempoMostrado.innerHTML = time + "s";
 
-//A continuación se compara el value del input con el inner del título que muestra la palabra aleatoria
+//A continuación, en el segundo if, se compara el value del input con el inner del título que muestra la palabra aleatoria, para comprobar si la respuesta escrita es correcta.
 palabraIngresada.addEventListener("keypress", function (e) { 
     console.log(e);
     if (event.key == "Enter") {if (palabraIngresada.value == palabraAleatoria.innerHTML) {
@@ -60,7 +60,7 @@ palabraIngresada.addEventListener("keypress", function (e) {
     (palabraIngresada.value = ""); 
     addToDom()}} 
     }
-)
+);
 
 function actualizarTiempo () {
     if (time === 0) {
@@ -71,7 +71,7 @@ function actualizarTiempo () {
     time --;
     tiempoMostrado.innerHTML = time + "s";
     }
-}
+};
 
 let timeInterval = setInterval (actualizarTiempo, 1000);
 
@@ -81,7 +81,7 @@ scoreMostrado.innerHTML = score;
 function updateScore () {
     score ++;
     scoreMostrado.innerHTML = score;  
-}
+};
 
 var contenedorGameOver = document.querySelector("#end-game-container");
 
@@ -94,4 +94,4 @@ function gameOver () {
     var botonVolveAEmpezar = "<br>" + '<button onclick="location.reload()">Volvé a empezar</button>';
     contenedorGameOver.innerHTML = tituloSinTiempo + parrafoPuntajeFinal + botonVolveAEmpezar;
     divisionPrincipal.innerHTML = "";
-}
+};
