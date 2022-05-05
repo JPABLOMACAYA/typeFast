@@ -48,13 +48,13 @@ scoreMostrado.innerHTML = score;
 
 tiempoMostrado.innerHTML = time + " s"; 
 
-//4.- Función randomWords, la cual genera un número al azar aumentado en proporción al largo del arreglo words y luego redondeado. Esto permite generar un número que representa una posición dentro del arreglo words, definida en palabraRandom a cada ejecución de la función.
+//4.- Función randomWords, la cual genera un número al azar aumentado en proporción al largo del arreglo words y luego redondeado. Esto permite generar un número que representa una posición dentro del arreglo words, definiendo palabraRandom a cada ejecución de la función.
 function randomWords () {
     let i = Math.floor(Math.random()*words.length);
     palabraRandom = words[i];
 };
 
-//5.- Función addToDom, la cual cunmpleel rol de invocar a la función randomWords y además actualizar la palabra aleatoria en el inner del título h1 de id "randomWord".
+//5.- Función addToDom, la cual cunmple el rol de invocar a la función randomWords y además actualizar la palabra aleatoria en el inner del título h1 de id "randomWord".
 function addToDom () {
     randomWords ();
     palabraAleatoria.innerHTML = palabraRandom;
